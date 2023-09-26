@@ -41,8 +41,12 @@ public:
 	float DamageGenerates = 10.0f;
 	float MaxDistance = 400.0f;
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere)
-	TMap<FString, uint32> MapBalasImpactadas;
+	//Creamos un TMap para guardar los impactos de las balas
+	TMap<FString, uint32>* MapBalasImpactadas;
+	
+
+	// TMap<FString, int32>& GetMapBalas() const { return MapBalasImpactadas; }
+
 
 };
 

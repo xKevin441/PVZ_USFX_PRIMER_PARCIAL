@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB02_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xCAFF37A9,
+				0x58360B9E,
 				0x9FA3186A,
 				METADATA_PARAMS(nullptr, 0)
 			};

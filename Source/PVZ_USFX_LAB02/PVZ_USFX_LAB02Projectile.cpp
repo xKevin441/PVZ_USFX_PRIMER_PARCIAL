@@ -54,9 +54,9 @@ void APVZ_USFX_LAB02Projectile::OnHit(UPrimitiveComponent* HitComp, AActor* Othe
 			//OtherComp->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 
 			OtherActor->TakeDamage(DamageGenerates, FDamageEvent(), nullptr, this);
-			FString ZombieID = OtherActor->GetName();
-			
-			MapBalasImpactadas["Zombie"]++;
+
+			// Se aumenta el valor del Tmap
+			MapBalasImpactadas[TEXT("Zombie")]++;
 
 			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("BalaImpacto"));
 			//OtherComp->DestroyComponent();

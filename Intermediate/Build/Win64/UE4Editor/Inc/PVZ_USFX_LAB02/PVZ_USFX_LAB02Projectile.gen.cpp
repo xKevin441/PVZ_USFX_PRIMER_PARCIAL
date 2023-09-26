@@ -137,12 +137,6 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB02Projectile() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileMovement_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProjectileMovement;
-		static const UE4CodeGen_Private::FUInt32PropertyParams NewProp_MapBalasImpactadas_ValueProp;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_MapBalasImpactadas_Key_KeyProp;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MapBalasImpactadas_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FMapPropertyParams NewProp_MapBalasImpactadas;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -182,21 +176,9 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB02Projectile() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_ProjectileMovement = { "ProjectileMovement", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APVZ_USFX_LAB02Projectile, ProjectileMovement), Z_Construct_UClass_UProjectileMovementComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_ProjectileMovement_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_ProjectileMovement_MetaData)) };
-	const UE4CodeGen_Private::FUInt32PropertyParams Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_MapBalasImpactadas_ValueProp = { "MapBalasImpactadas", nullptr, (EPropertyFlags)0x0000000000000001, UE4CodeGen_Private::EPropertyGenFlags::UInt32, RF_Public|RF_Transient|RF_MarkAsNative, 1, 1, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_MapBalasImpactadas_Key_KeyProp = { "MapBalasImpactadas_Key", nullptr, (EPropertyFlags)0x0000000000000001, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_MapBalasImpactadas_MetaData[] = {
-		{ "Category", "PVZ_USFX_LAB02Projectile" },
-		{ "ModuleRelativePath", "PVZ_USFX_LAB02Projectile.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FMapPropertyParams Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_MapBalasImpactadas = { "MapBalasImpactadas", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APVZ_USFX_LAB02Projectile, MapBalasImpactadas), EMapPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_MapBalasImpactadas_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_MapBalasImpactadas_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_ProjectileMesh,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_ProjectileMovement,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_MapBalasImpactadas_ValueProp,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_MapBalasImpactadas_Key_KeyProp,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::NewProp_MapBalasImpactadas,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APVZ_USFX_LAB02Projectile_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APVZ_USFX_LAB02Projectile>::IsAbstract,
@@ -225,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodePVZ_USFX_LAB02Projectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APVZ_USFX_LAB02Projectile, 2740659522);
+	IMPLEMENT_CLASS(APVZ_USFX_LAB02Projectile, 1205531410);
 	template<> PVZ_USFX_LAB02_API UClass* StaticClass<APVZ_USFX_LAB02Projectile>()
 	{
 		return APVZ_USFX_LAB02Projectile::StaticClass();

@@ -164,18 +164,6 @@ void APVZ_USFX_LAB02GameMode::BeginPlay()
 		World->GetTimerManager().SetTimer(TimerHandleTarjetasPlantaNuez, this, &APVZ_USFX_LAB02GameMode::TimerCallBackTarjetasPlantaNuez, 15.0f);
 
 	}
-
-
-	for (FConstPlayerControllerIterator It = GetWorld()->GetPlayerControllerIterator(); It; ++It)
-	{
-		APlayerController* PlayerController = It->Get();
-		if (PlayerController && PlayerController->IsA(APVZ_USFX_LAB02Projectile::StaticClass()))
-		{
-			MyPlayerController = Cast<APVZ_USFX_LAB02Projectile>(PlayerController);
-			break;
-		}
-	}
-
 }
 
 
@@ -184,6 +172,15 @@ void APVZ_USFX_LAB02GameMode::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	//VisualizarTarjetasPlantas();
+
+	// Contamos 10 segundos para mostrar las balas impactadas
+	tiempoMostrarBalas += DeltaTime;
+	if (tiempoMostrarBalas >= 10.0f)
+	{
+		MostrarBalasImpactadas();
+		tiempoMostrarBalas = 0.0f;
+	}
+
 
 	if (TiempoTrancurridoSiguienteTarjetaLanzaguisantes > 5.0f)
 	{
@@ -255,6 +252,7 @@ void APVZ_USFX_LAB02GameMode::Tick(float DeltaTime)
 	else {
 		VisualizarPotenciadores();
 	}*/
+
 }
 
 
@@ -280,9 +278,20 @@ void APVZ_USFX_LAB02GameMode::VisualizarTarjetasPlantas() {
 	}
 }
 
+
+
+// Mostramos el mensaje en pantalla
 void APVZ_USFX_LAB02GameMode::MostrarBalasImpactadas()
 {
+	FString Mensaje;
+	float valor = MapBalas[TEXT("Zombie")];
 
+	Mensaje = FString::Printf(TEXT("Zombies afectados: %s\n"), valor);
+	// Mostrar el mensaje en pantalla (puedes usar GEngine para esto)
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, Mensaje);
+	}
 
 }
 
