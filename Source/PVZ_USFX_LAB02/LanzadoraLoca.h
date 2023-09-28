@@ -17,4 +17,5 @@ public:
 	ALanzadoraLoca();
 	virtual void Tick(float DeltaTime) override;
 	float TiempoTranscurrido1 = 0.0f;
+	float TiempoEntreDisparos1 = 2.0f;
 };

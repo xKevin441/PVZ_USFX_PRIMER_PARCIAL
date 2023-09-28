@@ -14,7 +14,7 @@ void ALanzadoraLoca::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	TiempoTranscurrido1 += DeltaTime;
-	if (TiempoTranscurrido1 >= TiempoEntreDisparos) {
+	if (TiempoTranscurrido1 >= TiempoEntreDisparos1) {
 
 		float NumeroAleatorioX = FMath::RandRange(-1, 1);
 		float NumeroAleatorioY = FMath::RandRange(-1, 1);
