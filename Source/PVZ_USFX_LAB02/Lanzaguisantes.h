@@ -12,4 +12,5 @@ class PVZ_USFX_LAB02_API ALanzaguisantes : public APlant
 	GENERATED_BODY()
 public:
 	ALanzaguisantes();
+	virtual void Tick(float DeltaTime) override;
 };

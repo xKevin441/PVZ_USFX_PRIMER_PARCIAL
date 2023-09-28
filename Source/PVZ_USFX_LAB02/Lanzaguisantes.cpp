@@ -10,3 +10,13 @@ ALanzaguisantes::ALanzaguisantes()
 
 	Tags.Add(TEXT("Plant"));
 }
+
+void ALanzaguisantes::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+
+
+}
+
+

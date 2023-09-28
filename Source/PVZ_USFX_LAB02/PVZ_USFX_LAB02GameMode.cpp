@@ -16,6 +16,7 @@
 #include "Nuez.h"
 #include "Hongo.h"
 #include "PVZ_USFX_LAB02Projectile.h"
+//#include "LanzadoraLoca.h"
 
 APVZ_USFX_LAB02GameMode::APVZ_USFX_LAB02GameMode()
 {
@@ -52,6 +53,8 @@ APVZ_USFX_LAB02GameMode::APVZ_USFX_LAB02GameMode()
 void APVZ_USFX_LAB02GameMode::BeginPlay()
 {
 	Super::BeginPlay();
+
+	//ALanzadoraLoca* NewLanzadoraLoca = GetWorld()->SpawnActor<ALanzadoraLoca>(ALanzadoraLoca::StaticClass(), FVector(500.0f, 520.0f, 200.0f), FRotator(0.0f, 0.0f, 0.0f));
 
 	FTransform SpawnLocation;
 	SpawnLocation.SetLocation(FVector(-1500.0f, 1200.0f, 200.0f));
@@ -174,12 +177,12 @@ void APVZ_USFX_LAB02GameMode::Tick(float DeltaTime)
 	//VisualizarTarjetasPlantas();
 
 	// Contamos 10 segundos para mostrar las balas impactadas
-	tiempoMostrarBalas += DeltaTime;
-	if (tiempoMostrarBalas >= 10.0f)
-	{
-		MostrarBalasImpactadas();
-		tiempoMostrarBalas = 0.0f;
-	}
+	//tiempoMostrarBalas += DeltaTime;
+	//if (tiempoMostrarBalas >= 10.0f)
+	//{
+	//	MostrarBalasImpactadas();
+	//	tiempoMostrarBalas = 0.0f;
+	//}
 
 
 	if (TiempoTrancurridoSiguienteTarjetaLanzaguisantes > 5.0f)
@@ -281,19 +284,19 @@ void APVZ_USFX_LAB02GameMode::VisualizarTarjetasPlantas() {
 
 
 // Mostramos el mensaje en pantalla
-void APVZ_USFX_LAB02GameMode::MostrarBalasImpactadas()
-{
-	FString Mensaje;
-	float valor = MapBalas[TEXT("Zombie")];
-
-	Mensaje = FString::Printf(TEXT("Zombies afectados: %s\n"), valor);
-	// Mostrar el mensaje en pantalla (puedes usar GEngine para esto)
-	if (GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, Mensaje);
-	}
-
-}
+//void APVZ_USFX_LAB02GameMode::MostrarBalasImpactadas()
+//{
+//	FString Mensaje;
+//	float valor = MapBalas[TEXT("Zombie")];
+//
+//	Mensaje = FString::Printf(TEXT("Zombies afectados: %s\n"), valor);
+//	// Mostrar el mensaje en pantalla (puedes usar GEngine para esto)
+//	if (GEngine)
+//	{
+//		GEngine->AddOnScreenDebugMessage(-1, 10.0f, FColor::Red, Mensaje);
+//	}
+//
+//}
 
 
 //AZombie* APVZ_USFX_LAB02GameMode::SpawnZombie(FVector _spawnPosition)

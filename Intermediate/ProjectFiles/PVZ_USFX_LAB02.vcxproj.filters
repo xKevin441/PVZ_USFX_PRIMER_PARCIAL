@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PVZ_USFX_LAB02.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{2F657898-9BEC-4A9C-9231-CCECEC7D85F7}</UniqueIdentifier>
+      <UniqueIdentifier>{F0CB6EC6-1A55-4DD6-B8C5-E8300ECDA4F6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PVZ_USFX_LAB02.Target.cs">
       <Filter>Source</Filter>
@@ -16,7 +16,7 @@
     <None Include="..\..\.ignore" />
     <None Include="..\..\PVZ_USFX_LAB02.code-workspace" />
     <Filter Include="Config">
-      <UniqueIdentifier>{038732D9-48DF-405D-A046-677C70C9B74B}</UniqueIdentifier>
+      <UniqueIdentifier>{B2C14FCB-82AC-4303-9F98-22D1B4C14059}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -34,7 +34,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PVZ_USFX_LAB02">
-      <UniqueIdentifier>{997C4588-9228-41A8-AECF-C80C036807EB}</UniqueIdentifier>
+      <UniqueIdentifier>{9B52651F-CDC4-4FCD-891C-50519947D29C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB02\AbonoMagico.cpp">
       <Filter>Source\PVZ_USFX_LAB02</Filter>
@@ -64,6 +64,12 @@
       <Filter>Source\PVZ_USFX_LAB02</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PVZ_USFX_LAB02\Hongo.h">
+      <Filter>Source\PVZ_USFX_LAB02</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PVZ_USFX_LAB02\LanzadoraLoca.cpp">
+      <Filter>Source\PVZ_USFX_LAB02</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PVZ_USFX_LAB02\LanzadoraLoca.h">
       <Filter>Source\PVZ_USFX_LAB02</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB02\Lanzaguisantes.cpp">
@@ -135,6 +141,12 @@
     <ClInclude Include="..\..\Source\PVZ_USFX_LAB02\PVZ_USFX_LAB0Q2GameStateBase.h">
       <Filter>Source\PVZ_USFX_LAB02</Filter>
     </ClInclude>
+    <None Include="..\..\Source\PVZ_USFX_LAB02\PVZ_USFX_PrimerParcial.rar">
+      <Filter>Source\PVZ_USFX_LAB02</Filter>
+    </None>
+    <None Include="..\..\Source\PVZ_USFX_LAB02\PVZ_USFX_Primer_Parcial_.rar">
+      <Filter>Source\PVZ_USFX_LAB02</Filter>
+    </None>
     <ClCompile Include="..\..\Source\PVZ_USFX_LAB02\RandomMovement.cpp">
       <Filter>Source\PVZ_USFX_LAB02</Filter>
     </ClCompile>

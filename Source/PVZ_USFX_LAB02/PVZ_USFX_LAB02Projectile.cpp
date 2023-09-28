@@ -38,7 +38,7 @@ APVZ_USFX_LAB02Projectile::APVZ_USFX_LAB02Projectile()
 	DamageGenerates = 10.0f;
 
 
-	MapBalasImpactadas.Add(TEXT("Zombie"), 0);
+	//MapBalasImpactadas.Add(TEXT("Zombie"), 0);
 }
 
 // Este metodo es el que quita vida a los zombies "Enemy"
@@ -56,7 +56,7 @@ void APVZ_USFX_LAB02Projectile::OnHit(UPrimitiveComponent* HitComp, AActor* Othe
 			OtherActor->TakeDamage(DamageGenerates, FDamageEvent(), nullptr, this);
 
 			// Se aumenta el valor del Tmap
-			MapBalasImpactadas[TEXT("Zombie")]++;
+			//MapBalasImpactadas[TEXT("Zombie")]++;
 
 			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("BalaImpacto"));
 			//OtherComp->DestroyComponent();

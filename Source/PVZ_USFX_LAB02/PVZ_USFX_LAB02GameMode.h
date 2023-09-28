@@ -70,8 +70,8 @@ protected:
 
 	// Obtenemos acceso al TMap que creamos en La clase Projectile
 	class APVZ_USFX_LAB02Projectile* PVZ_USFX_LAB02Projectile = NewObject<APVZ_USFX_LAB02Projectile>();
-	TMap<FString, int32>* MapBalas = PVZ_USFX_LAB02Projectile->MapBalasImpactadas;
+	//TMap<FString, int32>* MapBalas = &PVZ_USFX_LAB02Projectile->MapBalasImpactadas;
 
-	float tiempoMostrarBalas = 0.0f;
-	void MostrarBalasImpactadas();
+	//float tiempoMostrarBalas = 0.0f;
+	//void MostrarBalasImpactadas();
 };
