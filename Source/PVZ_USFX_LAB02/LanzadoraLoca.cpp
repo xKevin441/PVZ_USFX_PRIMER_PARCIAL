@@ -6,7 +6,7 @@
 
 ALanzadoraLoca::ALanzadoraLoca()
 {
-	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlantMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Wedge_B.Shape_Wedge_B'"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh> PlantMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cone.Shape_Cone'"));
 	PlantMeshComponent->SetStaticMesh(PlantMesh.Object);
 }
 

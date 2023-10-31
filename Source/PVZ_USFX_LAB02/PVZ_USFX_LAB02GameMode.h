@@ -57,6 +57,8 @@ protected:
 	float TiempoTrancurridoSiguienteTarjetaNuez = 0.0f;
 	float TiempoTrancurridoSiguienteTarjetaLanzamaiz = 0.0f;
 
+	float TiempoTranscurridoMensaje = 0.0f;
+
 
 	FTimerHandle TimerHandleTarjetasPlantaNuez;
 	FTimerHandle TimerHandlePotenciadoresAgua;

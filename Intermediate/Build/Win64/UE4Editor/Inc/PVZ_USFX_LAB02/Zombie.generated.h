@@ -17,41 +17,41 @@ struct FHitResult;
 #endif
 #define PVZ_USFX_LAB02_Zombie_generated_h
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_SPARSE_DATA
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_RPC_WRAPPERS \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_SPARSE_DATA
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnHit); \
 	DECLARE_FUNCTION(execOnOverlapBeginFunction);
 
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnHit); \
 	DECLARE_FUNCTION(execOnOverlapBeginFunction);
 
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_INCLASS_NO_PURE_DECLS \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAZombie(); \
 	friend struct Z_Construct_UClass_AZombie_Statics; \
 public: \
-	DECLARE_CLASS(AZombie, AActor, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB02"), NO_API) \
+	DECLARE_CLASS(AZombie, APublisher, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB02"), NO_API) \
 	DECLARE_SERIALIZER(AZombie)
 
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_INCLASS \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_INCLASS \
 private: \
 	static void StaticRegisterNativesAZombie(); \
 	friend struct Z_Construct_UClass_AZombie_Statics; \
 public: \
-	DECLARE_CLASS(AZombie, AActor, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB02"), NO_API) \
+	DECLARE_CLASS(AZombie, APublisher, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB02"), NO_API) \
 	DECLARE_SERIALIZER(AZombie)
 
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_STANDARD_CONSTRUCTORS \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AZombie(const FObjectInitializer& ObjectInitializer); \
-	DEFINE_ABSTRACT_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AZombie) \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AZombie) \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AZombie); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AZombie); \
 private: \
@@ -61,7 +61,7 @@ private: \
 public:
 
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_ENHANCED_CONSTRUCTORS \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AZombie(AZombie&&); \
@@ -69,31 +69,31 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, AZombie); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AZombie); \
-	DEFINE_ABSTRACT_DEFAULT_CONSTRUCTOR_CALL(AZombie)
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AZombie)
 
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_PRIVATE_PROPERTY_OFFSET
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_7_PROLOG
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_GENERATED_BODY_LEGACY \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_PRIVATE_PROPERTY_OFFSET
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_8_PROLOG
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_PRIVATE_PROPERTY_OFFSET \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_SPARSE_DATA \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_RPC_WRAPPERS \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_INCLASS \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_STANDARD_CONSTRUCTORS \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_PRIVATE_PROPERTY_OFFSET \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_SPARSE_DATA \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_RPC_WRAPPERS \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_INCLASS \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_GENERATED_BODY \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_PRIVATE_PROPERTY_OFFSET \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_SPARSE_DATA \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_RPC_WRAPPERS_NO_PURE_DECLS \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_INCLASS_NO_PURE_DECLS \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_10_ENHANCED_CONSTRUCTORS \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_PRIVATE_PROPERTY_OFFSET \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_SPARSE_DATA \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_INCLASS_NO_PURE_DECLS \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Zombie_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

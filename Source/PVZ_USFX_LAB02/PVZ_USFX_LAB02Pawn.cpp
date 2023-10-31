@@ -57,7 +57,7 @@ void APVZ_USFX_LAB02Pawn::SetupPlayerInputComponent(class UInputComponent* Playe
 	check(PlayerInputComponent);
 
 	// set up gameplay key bindings
-	PlayerInputComponent->BindAxis(MoveForwardBinding);
+	PlayerInputComponent->BindAxis(MoveForwardBinding); //Enganchar 
 	PlayerInputComponent->BindAxis(MoveRightBinding);
 	PlayerInputComponent->BindAxis(FireForwardBinding);
 	PlayerInputComponent->BindAxis(FireRightBinding);
@@ -66,7 +66,7 @@ void APVZ_USFX_LAB02Pawn::SetupPlayerInputComponent(class UInputComponent* Playe
 void APVZ_USFX_LAB02Pawn::Tick(float DeltaSeconds)
 {
 	// Find movement direction
-	const float ForwardValue = GetInputAxisValue(MoveForwardBinding);
+	const float ForwardValue = GetInputAxisValue(MoveForwardBinding); // 
 	const float RightValue = GetInputAxisValue(MoveRightBinding);
 
 	// Clamp max size so that (X=1, Y=1) doesn't cause faster movement in diagonal directions

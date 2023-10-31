@@ -15,7 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeZombie() {}
 // Cross Module References
 	PVZ_USFX_LAB02_API UClass* Z_Construct_UClass_AZombie_NoRegister();
 	PVZ_USFX_LAB02_API UClass* Z_Construct_UClass_AZombie();
-	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	PVZ_USFX_LAB02_API UClass* Z_Construct_UClass_APublisher();
 	UPackage* Z_Construct_UPackage__Script_PVZ_USFX_LAB02();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
@@ -230,7 +230,7 @@ void EmptyLinkFunctionForGeneratedCodeZombie() {}
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_AZombie_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_AActor,
+		(UObject* (*)())Z_Construct_UClass_APublisher,
 		(UObject* (*)())Z_Construct_UPackage__Script_PVZ_USFX_LAB02,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AZombie_Statics::FuncInfo[] = {
@@ -271,7 +271,7 @@ void EmptyLinkFunctionForGeneratedCodeZombie() {}
 		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_AZombie_Statics::PropPointers),
 		0,
-		0x009000A5u,
+		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AZombie_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AZombie_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_AZombie()
@@ -283,7 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeZombie() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AZombie, 3107407112);
+	IMPLEMENT_CLASS(AZombie, 1588037548);
 	template<> PVZ_USFX_LAB02_API UClass* StaticClass<AZombie>()
 	{
 		return AZombie::StaticClass();

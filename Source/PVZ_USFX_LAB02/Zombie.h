@@ -2,10 +2,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Publisher.h"
 #include "Zombie.generated.h"
 
-UCLASS(Abstract)
-class PVZ_USFX_LAB02_API AZombie : public AActor
+UCLASS()
+class PVZ_USFX_LAB02_API AZombie : public APublisher
 {
 	GENERATED_BODY()
 	
@@ -36,10 +37,16 @@ public:
 	float MovementSpeed = 4.0f;
 	bool bCanMove = false;
 
+	bool estado = false;
+	void estadoChanged();
+	void SetEstado(bool _estado);
+
+	FORCEINLINE bool GetEstado() { return estado; }
+
 	float TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser);
 	void MoveToTarget(FVector TargetLocation);
 
-	virtual void Attack() PURE_VIRTUAL(AZombie::Attack, );
+	virtual void Attack() {};
 
 	FORCEINLINE void SetSpawnAfter(float _SpawnAfter) { SpawnAfter = _SpawnAfter; }
 	FORCEINLINE float GetSpawnAfter() { return SpawnAfter; }

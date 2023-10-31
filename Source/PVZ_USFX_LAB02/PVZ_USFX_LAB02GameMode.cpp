@@ -61,6 +61,10 @@ void APVZ_USFX_LAB02GameMode::BeginPlay()
 	float initialPositionX = -1500.0f;
 	float initialPositionY = 1200.0f;
 
+	FTimerHandle TimerHandle;
+	float Delay = 10.0f;	
+	GetWorldTimerManager().SetTimer(TimerHandle, Delay, false);
+
 	for (int32 i = 0; i < NumberZombiesComun; ++i)
 	{
 		AZombieComun* NewZombieComun = SpawnZombieComun(FVector(initialPositionX + i * 150.0f, initialPositionY, 200.0f));
@@ -71,78 +75,79 @@ void APVZ_USFX_LAB02GameMode::BeginPlay()
 			NewZombieComun->SetActorHiddenInGame(true);
 			NewZombieComun->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
 			NewZombieComun->SetCanMove(false);
+			NewZombieComun->SetEstado(1);
 			ArrayZombies.Add(NewZombieComun);
 		}
 	}
 
-	initialPositionX = -1500.0f;
-	initialPositionY = 1200.0f;
+	//initialPositionX = -1500.0f;
+	//initialPositionY = 1200.0f;
 
-	for (int32 i = 0; i < NumberZombiesCono; ++i)
-	{
-		AZombieCono* NewZombieCono = SpawnZombieCono(FVector(initialPositionX + i * 150.0f, initialPositionY, 200.0f));
-		if (NewZombieCono)
-		{
-			NewZombieCono->SetSpawnAfter(FMath::RandRange(1, 10));
-			NewZombieCono->SetActorHiddenInGame(true);
-			NewZombieCono->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
-			NewZombieCono->SetCanMove(false);
-			ArrayZombies.Add(NewZombieCono);
-		}
-	}
+	//for (int32 i = 0; i < NumberZombiesCono; ++i)
+	//{
+	//	AZombieCono* NewZombieCono = SpawnZombieCono(FVector(initialPositionX + i * 150.0f, initialPositionY, 200.0f));
+	//	if (NewZombieCono)
+	//	{
+	//		NewZombieCono->SetSpawnAfter(FMath::RandRange(1, 10));
+	//		NewZombieCono->SetActorHiddenInGame(true);
+	//		NewZombieCono->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
+	//		NewZombieCono->SetCanMove(false);
+	//		ArrayZombies.Add(NewZombieCono);
+	//	}
+	//}
 
-	initialPositionX = -1500.0f;
-	initialPositionY = 1200.0f;
+	//initialPositionX = -1500.0f;
+	//initialPositionY = 1200.0f;
 
-	for (int32 i = 0; i < NumberZombiesCubo; ++i)
-	{
-		AZombieCubo* NewZombieCubo = SpawnZombieCubo(FVector(initialPositionX + i * 150.0f, initialPositionY, 200.0f));
+	//for (int32 i = 0; i < NumberZombiesCubo; ++i)
+	//{
+	//	AZombieCubo* NewZombieCubo = SpawnZombieCubo(FVector(initialPositionX + i * 150.0f, initialPositionY, 200.0f));
 
-		if (NewZombieCubo)
-		{
-			NewZombieCubo->SetSpawnAfter(FMath::RandRange(1, 10));
-			NewZombieCubo->SetActorHiddenInGame(true);
-			NewZombieCubo->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
-			NewZombieCubo->SetCanMove(false);
-			ArrayZombies.Add(NewZombieCubo);
-		}
-	}
+	//	if (NewZombieCubo)
+	//	{
+	//		NewZombieCubo->SetSpawnAfter(FMath::RandRange(1, 10));
+	//		NewZombieCubo->SetActorHiddenInGame(true);
+	//		NewZombieCubo->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
+	//		NewZombieCubo->SetCanMove(false);
+	//		ArrayZombies.Add(NewZombieCubo);
+	//	}
+	//}
 
-	initialPositionX = -1500.0f;
-	initialPositionY = 1200.0f;
+	//initialPositionX = -1500.0f;
+	//initialPositionY = 1200.0f;
 
-	for (int32 i = 0; i < NumberZombiesSenal; ++i)
-	{
-		AZombieSenal* NewZombieSenal = SpawnZombieSenal(FVector(initialPositionX + i * 150.0f, initialPositionY, 200.0f));
+	//for (int32 i = 0; i < NumberZombiesSenal; ++i)
+	//{
+	//	AZombieSenal* NewZombieSenal = SpawnZombieSenal(FVector(initialPositionX + i * 150.0f, initialPositionY, 200.0f));
 
-		if (NewZombieSenal)
-		{
-			NewZombieSenal->SetSpawnAfter(FMath::RandRange(1, 10));
-			NewZombieSenal->SetActorHiddenInGame(true);
-			NewZombieSenal->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
-			NewZombieSenal->SetCanMove(false);
-			ArrayZombies.Add(NewZombieSenal);
-		}
-	}
+	//	if (NewZombieSenal)
+	//	{
+	//		NewZombieSenal->SetSpawnAfter(FMath::RandRange(1, 10));
+	//		NewZombieSenal->SetActorHiddenInGame(true);
+	//		NewZombieSenal->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
+	//		NewZombieSenal->SetCanMove(false);
+	//		ArrayZombies.Add(NewZombieSenal);
+	//	}
+	//}
 
-	initialPositionX = -1500.0f;
-	initialPositionY = 100.0f;
-	for (int i = 0; i < 5; i++)
-	{
-		ALanzaguisantes* NewLanzaguisantes = SpawnPlantLanzaguisantes(FVector(initialPositionX + i * 150.0f, initialPositionY, 200.0f));
+	//initialPositionX = -1500.0f;
+	//initialPositionY = 100.0f;
+	//for (int i = 0; i < 5; i++)
+	//{
+	//	ALanzaguisantes* NewLanzaguisantes = SpawnPlantLanzaguisantes(FVector(initialPositionX + i * 150.0f, initialPositionY, 200.0f));
 
-		if (NewLanzaguisantes)
-		{
-			NewLanzaguisantes->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
-			aPlantas.Add(NewLanzaguisantes);
-		}
+	//	if (NewLanzaguisantes)
+	//	{
+	//		NewLanzaguisantes->SetActorEnableCollision(true);     // Habilita las colisiones si es necesario
+	//		aPlantas.Add(NewLanzaguisantes);
+	//	}
 
 
-		for (int j = 0; j < 2; j++) {
-			APlant* NewLanzaguizantes = SpawnPlant(FVector(initialPositionX + i * 150.0f, initialPositionY + j * 350.0f, 200.0f));
-			aPlantas.Add(NewLanzaguizantes);
-		}
-	} 
+	//	for (int j = 0; j < 2; j++) {
+	//		APlant* NewLanzaguizantes = SpawnPlant(FVector(initialPositionX + i * 150.0f, initialPositionY + j * 350.0f, 200.0f));
+	//		aPlantas.Add(NewLanzaguizantes);
+	//	}
+	//} 
 
 	//initialPositionX = -1500.0f;
 	//initialPositionY = 1000.0f;
@@ -184,6 +189,12 @@ void APVZ_USFX_LAB02GameMode::Tick(float DeltaTime)
 	//	tiempoMostrarBalas = 0.0f;
 	//}
 
+	TiempoTranscurridoMensaje += DeltaTime;
+	if (TiempoTranscurridoMensaje <= 5.0f)
+	{
+		APlant* planta = nullptr;
+		
+	}
 
 	if (TiempoTrancurridoSiguienteTarjetaLanzaguisantes > 5.0f)
 	{

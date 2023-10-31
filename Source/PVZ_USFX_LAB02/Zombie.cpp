@@ -119,6 +119,18 @@ void AZombie::Tick(float DeltaTime)
 }
 
 
+void AZombie::estadoChanged()
+{
+	NotifySubscribers();
+}
+
+void AZombie::SetEstado(bool _estado)
+{
+	bCanMove = _estado;
+	estadoChanged();
+
+}	
+
 //OtherActor->TakeDamage(DamageGenerates, FDamageEvent(), nullptr, this);
 float AZombie::TakeDamage(float Damage, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {

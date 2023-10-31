@@ -3,5 +3,9 @@ D:\Juegos y aplicaciones\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObjec
 D:\Juegos y aplicaciones\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
 E:\Estudio\Programacion Avanzada II\Repo\Pvz repositorio\PVZ_USFX_LAB02-master\Source\PVZ_USFX_LAB02/ZombieCono.h
 E:\Estudio\Programacion Avanzada II\Repo\Pvz repositorio\PVZ_USFX_LAB02-master\Source\PVZ_USFX_LAB02\Zombie.h
+E:\Estudio\Programacion Avanzada II\Repo\Pvz repositorio\PVZ_USFX_LAB02-master\Source\PVZ_USFX_LAB02\Publisher.h
+E:\Estudio\Programacion Avanzada II\Repo\Pvz repositorio\PVZ_USFX_LAB02-master\Source\PVZ_USFX_LAB02\Subscriber.h
+E:\Estudio\Programacion Avanzada II\Repo\Pvz repositorio\PVZ_USFX_LAB02-master\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB02\Subscriber.generated.h
+E:\Estudio\Programacion Avanzada II\Repo\Pvz repositorio\PVZ_USFX_LAB02-master\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB02\Publisher.generated.h
 E:\Estudio\Programacion Avanzada II\Repo\Pvz repositorio\PVZ_USFX_LAB02-master\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB02\Zombie.generated.h
 E:\Estudio\Programacion Avanzada II\Repo\Pvz repositorio\PVZ_USFX_LAB02-master\Intermediate\Build\Win64\UE4Editor\Inc\PVZ_USFX_LAB02\ZombieCono.generated.h

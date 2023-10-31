@@ -13,28 +13,30 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PVZ_USFX_LAB02_Girasol_generated_h
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_SPARSE_DATA
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_RPC_WRAPPERS
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_INCLASS_NO_PURE_DECLS \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_SPARSE_DATA
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_RPC_WRAPPERS
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_RPC_WRAPPERS_NO_PURE_DECLS
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAGirasol(); \
 	friend struct Z_Construct_UClass_AGirasol_Statics; \
 public: \
 	DECLARE_CLASS(AGirasol, APlant, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB02"), NO_API) \
-	DECLARE_SERIALIZER(AGirasol)
+	DECLARE_SERIALIZER(AGirasol) \
+	virtual UObject* _getUObject() const override { return const_cast<AGirasol*>(this); }
 
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_INCLASS \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesAGirasol(); \
 	friend struct Z_Construct_UClass_AGirasol_Statics; \
 public: \
 	DECLARE_CLASS(AGirasol, APlant, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/PVZ_USFX_LAB02"), NO_API) \
-	DECLARE_SERIALIZER(AGirasol)
+	DECLARE_SERIALIZER(AGirasol) \
+	virtual UObject* _getUObject() const override { return const_cast<AGirasol*>(this); }
 
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_STANDARD_CONSTRUCTORS \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AGirasol(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AGirasol) \
@@ -47,7 +49,7 @@ private: \
 public:
 
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_ENHANCED_CONSTRUCTORS \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AGirasol(AGirasol&&); \
@@ -58,28 +60,31 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AGirasol)
 
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_PRIVATE_PROPERTY_OFFSET
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_12_PROLOG
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_GENERATED_BODY_LEGACY \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__ZombiePublisher() { return STRUCT_OFFSET(AGirasol, ZombiePublisher); }
+
+
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_PROLOG
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_PRIVATE_PROPERTY_OFFSET \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_SPARSE_DATA \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_RPC_WRAPPERS \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_INCLASS \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_STANDARD_CONSTRUCTORS \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_PRIVATE_PROPERTY_OFFSET \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_SPARSE_DATA \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_RPC_WRAPPERS \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_INCLASS \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_GENERATED_BODY \
+#define PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_PRIVATE_PROPERTY_OFFSET \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_SPARSE_DATA \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_INCLASS_NO_PURE_DECLS \
-	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_15_ENHANCED_CONSTRUCTORS \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_PRIVATE_PROPERTY_OFFSET \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_SPARSE_DATA \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_INCLASS_NO_PURE_DECLS \
+	PVZ_USFX_LAB02_master_Source_PVZ_USFX_LAB02_Girasol_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

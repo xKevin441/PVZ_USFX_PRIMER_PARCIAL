@@ -21,7 +21,7 @@ class APVZ_USFX_LAB02Pawn : public APawn
 
 	/** Camera boom positioning the camera above the character */
 	UPROPERTY(Category = Camera, VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
-	class USpringArmComponent* CameraBoom;
+	class USpringArmComponent* CameraBoom; // Spring arm es un componente que se utiliza para posicionar la cámara
 
 public:
 	APVZ_USFX_LAB02Pawn();
@@ -54,6 +54,7 @@ public:
 	void ShotTimerExpired();
 
 	// Static names for axis bindings
+   // 
 	static const FName MoveForwardBinding;
 	static const FName MoveRightBinding;
 	static const FName FireForwardBinding;
